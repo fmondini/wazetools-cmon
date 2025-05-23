@@ -1,0 +1,69 @@
+{
+	"Globals": {
+		"cookie": true
+	},
+	"PrivateParams": {
+		"COMMENT": "+++ Private Parameters JSON File location +++",
+		"devl": "C:/WorkSpace/Eclipse/Waze.Tools/WAZE_PrivateParams/PrivateParams.json",
+		"prod": "/etc/httpd/conf/PrivateParams.json"
+	},
+	"TopAppBar": {
+		"enabled": true,
+		"drawer": [
+			{ "only_if_logged": true,  "text": "Show Details",         "icon": "summarize",     "link": "../manage/details.jsp",                             "colr": "",        "dest": ""       },
+			{ "only_if_logged": true,  "text": "Show Statistics",      "icon": "trending_up",   "link": "../manage/stats.jsp",                               "colr": "",        "dest": ""       },
+			{ "only_if_logged": true,  "text": "Export Data",          "icon": "file_download", "link": "../manage/export.jsp",                              "colr": "",        "dest": ""       },
+			{ "only_if_logged": true,  "text": "",                     "icon": "",              "link": "",                                                  "colr": "",        "dest": ""       },
+			{ "only_if_logged": false, "text": "Bugs (Issue Tracker)", "icon": "bug_report",    "link": "https://github.com/fmondini/wazetools-cmon/issues", "colr": "#007dc1", "dest": "_blank" },
+			{ "only_if_logged": false, "text": "Condizioni d'uso",     "icon": "copyright",     "link": "https://danisoft.software/home/copyright.jsp",      "colr": "#007dc1", "dest": "_blank" },
+			{ "only_if_logged": false, "text": "About...",             "icon": "info_outline",  "link": "../home/about.jsp",                                 "colr": "",        "dest": ""       }
+		]
+	},
+	"Header" : {
+		"enabled": true,
+		"space_up_class": "DS-padding-top-16px",
+		"space_dn_class": "DS-padding-bottom-0px",
+		"drop_shadow": false,
+		"show_separator": false
+	},
+	"Footer": {
+		"enabled": true,
+		"space_up_class": "DS-padding-top-8px",
+		"space_dn_class": "DS-padding-bottom-8px"
+	},
+	"About": {
+		"COMMENT": "+++ Leave ethernet empty to disable graphs +++",
+		"ethernet": "eth0",
+		"srv_ping": "ovh-gra2-02.danisoft.net",
+		"srv_traf": "waze.tools",
+		"srv_temp": "ovh-gra2-02.danisoft.net",
+		"proprietary_license": false
+	},
+	"GoogleAnalytics": {
+		"COMMENT": "+++ Leave empty to disable analytics +++",
+		"id": "G-XLMXDL2H55"
+	},
+	"MySQL": {
+		"enabled": true,
+		"class": "com.mysql.cj.jdbc.Driver",
+		"schema": "WazeTools",
+		"params": [
+			"useSSL=false",
+			"jdbcCompliantTruncation=false",
+			"serverTimezone=Europe/Rome",
+			"allowPublicKeyRetrieval=true"
+		],
+		"devl": {
+			"host": "localhost",
+			"port": 3306,
+			"user": "wazetools",
+			"pass": "No_Passw0rd_Needed"
+		},
+		"prod": {
+			"host": "localhost",
+			"port": 6446,
+			"user": "wazetools",
+			"pass": "No_Passw0rd_Needed"
+		}
+ 	}
+}
